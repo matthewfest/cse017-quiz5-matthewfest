@@ -6,7 +6,7 @@ Make one commit per question (at least).
 
 ## Question 1 
 
-Consider the Depth First Search graph algorithm versus the Breadth First Search algorithm. They are very similar, except one uses a stack and the other uses a queue. How does the choice of datastructure in the algorithm affect the execution of the respective algorithms?
+Consider the Depth First Search graph algorithm versus the Breadth First Search algorithm. They are very similar, except one uses a stack and the other uses a queue. How does the choice of datastructure in the affect the execution of the respective algorithms?
 
 ## Question 2
 
