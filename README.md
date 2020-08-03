@@ -8,13 +8,18 @@ Make one commit per question (at least).
 
 Consider the Depth First Search graph algorithm versus the Breadth First Search algorithm. They are very similar, except one uses a stack and the other uses a queue. How does the choice of datastructure in the affect the execution of the respective algorithms?
 
+Breadth First Search uses a queue, while Depth First Search uses a stack. The type of datastructure used will determine what order the search takes place in because Queues are LIFO and Stacks are FIFO.
+
 ## Question 2
 
 What is the difference between a tree and a graph?
 
+
 ## Question 3
 
 In the circular queue datastructure we have `front` and `back` variables. What is their purpose? Why do we design the queue this way?
+
+
 
 ## Question 4
 
