@@ -14,6 +14,7 @@ Breadth First Search uses a queue, while Depth First Search uses a stack. The ty
 
 What is the difference between a tree and a graph?
 
+A tree has parents and children leafs, but a graph can have an overall cycle going to any other leaf of the graph and can have multiple directions
 
 ## Question 3
 
