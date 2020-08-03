@@ -20,7 +20,7 @@ A tree has parents and children leafs, but a graph can have an overall cycle goi
 
 In the circular queue datastructure we have `front` and `back` variables. What is their purpose? Why do we design the queue this way?
 
-
+The front variable points to the first element in the circular queue, and the back variable points to the last element in the circular queue. This is where the circle gets connected. The next inserted item in the queue becomes the rear of the queue.
 
 ## Question 4
 
