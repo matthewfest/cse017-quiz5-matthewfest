@@ -44,3 +44,30 @@ Encode the following graph as an adjacency matrix
 ## Question 5
 
 For the graph in the previous question, write out the steps of Dijkstra's Algorithm to find the shortest path between Node 1 and Node 11. For each step, write down the Unvisited set U, the Visited set V, and the current tenative distance vector D.
+
+1.) Make an unvisited list
+U = {1,2,3,4,5,6,7,8,9,10,11}
+2.) Assign distance so far
+D = [∞,∞,∞,∞,∞,∞,∞,∞,∞,∞,∞]
+3.) For the current node, calculate distances to adjacent nodes through current node
+D = [0,∞,∞,13,∞,∞,2,∞,∞,∞,∞]
+4.) Mark current node as visible
+V = {1}, U = {2,3,4,5,6,7,8,9,10,11}
+5.) Choose unvisited node with the shortest distance so far as the next node
+6.) Go to 3 and continue.
+
+Current = 7                                     Current = 10                                Current = 4                             Current = 9
+V = {1}                                         V = {1,7}                                   V = {1,7,10}                            V = {1,4,7,10}
+U = {2,3,4,5,6,7,8,9,10,11}         --->        U = {2,3,4,5,6,8,9,10,11}       --->        U = {2,3,4,5,6,8,9,11}       --->       U = {2,3,5,6,8,9,11}
+D = [0,∞,∞,13,∞,∞,2,∞,∞,∞,∞]                    D = [0,∞,∞,13,∞,∞,2,∞,∞,8,∞]                D = [0,∞,∞,13,∞,∞,2,∞,8,8,∞]            D = [0,∞,∞,13,15,∞,2,∞,8,8,∞]
+
+Current = 5                                     Current = 8                                Current = 11                             
+V = {1,4,7,9,10}                                V = {1,4,5,7,9,10}                         V = {1,4,5,7,8,9,10}                    
+U = {2,3,5,6,8,11}                  --->        U = {2,3,6,8,11}                --->       U = {2,3,6,11}               
+D = [0,5,∞,13,15,4,2,14,8,8,∞]                  D = [0,5,11,13,15,4,2,14,8,8,∞]            D = [25,7,11,13,45,4,2,14,8,8,6]
+
+Shortest path = 53
+
+    
+
+
